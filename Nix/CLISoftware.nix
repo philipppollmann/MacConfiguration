@@ -12,11 +12,11 @@
   networking.firewall.allowedTCPPorts = [ 22 80 443 ];
 
   environment.systemPackages = with pkgs; [
-    go
-    python38
-    dotnet-sdk
-    nodejs-14_x
-    openjdk
+    terraform
+    azure-cli
+    gh # GitHub CLI
+    git
+    jq
   ];
 
   users.users.yourUsername = {
