@@ -12,13 +12,11 @@
   networking.firewall.allowedTCPPorts = [ 22 80 443 ];
 
   environment.systemPackages = with pkgs; [
-    vscode
-    jetbrains-toolbox
-    docker
-    git-fork
-    notion
-    iterm
-    postman
+    go
+    python38
+    dotnet-sdk
+    nodejs-14_x
+    openjdk
   ];
 
   users.users.yourUsername = {
